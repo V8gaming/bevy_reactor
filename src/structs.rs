@@ -12,8 +12,7 @@ pub(crate) struct Rod {
     number: u32,
     position: Vec2,
     rod_type: String,
-    data: Data
-
+    data: Data,
 }
 impl Rod {
     pub(crate) fn new(position: Vec2, number: u32, string: String) -> Rod {
@@ -68,9 +67,7 @@ struct ControlRodData {
     material_data: MaterialData,
     date: f32,
     wear_level: f32,
-    emergency_position: Option<f32>
-    
-
+    emergency_position: Option<f32>,
 }
 #[derive(Debug, Default)]
 struct AutomaticControlRod {
@@ -102,13 +99,11 @@ struct MaterialData {
     density: f32,
     melting_point: f32,
     thermal_conductivity: f32,
-
 }
 
-#[derive(Debug, Default)] 
+#[derive(Debug, Default)]
 struct Cladding {
     material_data: MaterialData,
     wear_level: f32,
     corrosion_resistance: f32,
 }
-
