@@ -9,22 +9,33 @@ Information about the RBMK-1000 can be found from the report from the USSR STATE
 ### Reactor
 #### Reactor Core
 - [X] Add reactor core sprite grid
-- [ ] Add reactor core to tab system
+    - [X] Add reactor core to tab system
 - [ ] Refactor reactor spawning
 
 #### Reactor UI
 - [X] Add reactor UI
-- [X] Add reactor UI to tab system
+    - [X] Add reactor UI to tab system
 - [ ] Add functionality to reactor UI
 
 ### Tab System
 - [X] Add tab system
 - [X] Add tab moving
 - [X] Add close button to tabs
-- [ ] Tab snapping and not going off screen
+    - [X] Add tab closing
+- [X] Camera Texture Demo
+- [X] Add tab Border
+- [ ] Add tab creation 
+- [ ] Tab snapping and not going off screen ( stop mouse from moving )
 - [ ] Flex alignment for tabs
-- [ ] Add tab resizing
+- [ ] Add tab scaling, hard because all objects have to be rerendered or image becomes distorted ( Settings to preserve aspect ratio, or enable scrolling of smaller than content?, Rect in Sprite Struct, require visibilty calculation)
+    - [ ] Add tab maximizing ( if camera, set main, else scale tab to screen size)
 - [ ] Add tab scrolling
+- [ ] Change close button to box sprite with x in it
+
+## Bugs
+- [ ] Button bounds not aligned with sprite
+- [ ] z offset when dropped not reset (create global z offset manager?, make it so grabbing something sets the z offset to the greatest z offset + 1)
+- [ ] Grabbing more than one tab at a time causes issues, limit to one tab at a time
 
 ## License
 This project is duel licensed under the MIT license and the Apache License (Version 2.0). See [LICENSE-MIT](LICENSE-MIT) and [LICENSE-APACHE](LICENSE-APACHE) for more details.
